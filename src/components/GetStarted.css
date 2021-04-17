@@ -1,0 +1,33 @@
+.ready-container {
+  background-color: #f67e7e;
+  background-image: url(/src/assets/bg-pattern-home-6-about-5.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -2rem left;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 5rem 1rem 8rem 1rem;
+}
+
+.ready-title {
+  font-size: 32px;
+  color: #012f34;
+  margin-bottom: 5rem;
+}
+
+.contact-link {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  color: #012f34;
+  font-weight: 600;
+  font-size: 18px;
+  border: 2px solid #012f34;
+  border-radius: 10rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #fff;
+  background-color: #012f34;
+}

@@ -4,6 +4,7 @@ import HomeFeatures from "../components/HomeFeatures";
 import HomeReviews from "../components/HomeReviews";
 import featuresData from "./featuresData";
 import reviewsData from "./reviewsData";
+import GetStarted from "../components/GetStarted";
 
 export default function Home() {
   const features = featuresData.map((item) => (
@@ -37,7 +38,7 @@ export default function Home() {
         </h2>
         {reviews}
       </div>
-      {/* contact us component */}
+      <GetStarted />
       {/* footer */}
     </div>
   );
