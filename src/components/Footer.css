@@ -1,0 +1,42 @@
+.footer-container {
+  background-color: #002529;
+  background-image: url(../assets/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center top 30px;
+  text-align: center;
+  padding: 10rem 1rem 5rem 1rem;
+}
+
+.footer-links-container {
+  margin-bottom: 5rem;
+}
+
+.footer-link {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+.location-info,
+.copyright {
+  color: #fff;
+  font-size: 14px;
+}
+
+.info,
+.copyright {
+  font-weight: 600;
+}
+
+.icons-container {
+  margin: 5rem 1rem;
+}
+
+.social-icon {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.copyright {
+  margin: 0;
+}

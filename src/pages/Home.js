@@ -2,9 +2,10 @@ import React from "react";
 import "./Home.css";
 import HomeFeatures from "../components/HomeFeatures";
 import HomeReviews from "../components/HomeReviews";
+import GetStarted from "../components/GetStarted";
+import Footer from "../components/Footer";
 import featuresData from "./featuresData";
 import reviewsData from "./reviewsData";
-import GetStarted from "../components/GetStarted";
 
 export default function Home() {
   const features = featuresData.map((item) => (
@@ -39,7 +40,7 @@ export default function Home() {
         {reviews}
       </div>
       <GetStarted />
-      {/* footer */}
+      <Footer />
     </div>
   );
 }
