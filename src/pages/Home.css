@@ -78,6 +78,10 @@
 }
 
 .reviews-container {
+  background-image: url("/src/assets/bg-pattern-home-4-about-3.svg"),
+    url("/src/assets/bg-pattern-home-5.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
   text-align: center;
   padding: 5rem 2.5rem;
 }
@@ -89,6 +93,7 @@
 .reviews-header {
   text-align: center;
   max-width: 100%;
+  margin-top: 10rem;
 }
 
 .story {
