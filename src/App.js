@@ -13,7 +13,7 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/contact" exact component={Contact} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
     </React.Fragment>
