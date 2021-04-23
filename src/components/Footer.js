@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.svg";
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
 import "./Footer.css";
@@ -8,6 +9,11 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-links-container">
+        <div>
+          <Link to="/">
+            <img className="footer-logo" src={Logo} alt="myteam logo" />
+          </Link>
+        </div>
         <Link className="footer-link" to="/">
           home
         </Link>
@@ -32,8 +38,8 @@ export default function Footer() {
         <a className="social-icon" href="https://twitter.com">
           <AiIcons.AiOutlineTwitter />
         </a>
+        <h3 className="copyright"> Copyright 2021. All Rights Reserved </h3>
       </div>
-      <h3 className="copyright"> Copyright 2021. All Rights Reserved </h3>
     </div>
   );
 }
