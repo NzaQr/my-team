@@ -11,7 +11,7 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/myteam" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
