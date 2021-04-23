@@ -138,3 +138,10 @@ a {
     background-color: #fff;
   }
 }
+
+@media (min-width: 1200px) {
+  .header-container {
+    margin-top: 2rem;
+    padding: 3rem 12rem;
+  }
+}
