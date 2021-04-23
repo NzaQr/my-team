@@ -1,10 +1,10 @@
 .ready-container {
+  display: flex;
+  flex-direction: column;
   background-color: #f67e7e;
   background-image: url(/src/assets/bg-pattern-home-6-about-5.svg);
   background-repeat: no-repeat;
   background-position: bottom -2rem left;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   padding: 5rem 1rem 8rem 1rem;
 }
@@ -29,4 +29,21 @@
 .contact-link:hover {
   color: #fff;
   background-color: #012f34;
+}
+
+@media (min-width: 1200px) {
+  .ready-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7rem 5rem;
+  }
+  .contact-link {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .ready-title {
+    font-size: 2vw;
+    margin: 0;
+  }
 }
