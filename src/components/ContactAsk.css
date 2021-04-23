@@ -1,0 +1,14 @@
+.ask-about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-left: 2rem;
+  padding: 2rem;
+}
+.ask-about {
+  margin-left: 2.5rem;
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+}
