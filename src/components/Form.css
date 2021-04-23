@@ -1,0 +1,50 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+input,
+textarea {
+  font-family: "Livvic", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1b6067;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.submit {
+  color: #fff;
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  border: solid 2px #fff;
+  border-radius: 40px;
+  padding: 1rem;
+  max-width: 60%;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  input,
+  textarea {
+    padding: 2rem 15rem 3rem 2rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  textarea {
+    margin-bottom: 5rem;
+  }
+  .submit {
+    transition: all 0.2s ease-in-out;
+  }
+  .submit:hover {
+    color: #014e56;
+    background-color: #fff;
+  }
+}
