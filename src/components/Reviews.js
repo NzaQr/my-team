@@ -1,8 +1,6 @@
 import React from "react";
 
-export default function HomeFeatures({
-  review: { story, name, position, img },
-}) {
+export default function Reviews({ review: { story, name, position, img } }) {
   return (
     <div className="review-info-container">
       <p className="story">{story}</p>

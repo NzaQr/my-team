@@ -2,7 +2,7 @@ import person from "../assets/icon-person.svg";
 import chart from "../assets/icon-chart.svg";
 import cog from "../assets/icon-cog.svg";
 
-const homeData = [
+const featuresData = [
   {
     img: person,
     title: "Experienced Individuals",
@@ -22,4 +22,4 @@ const homeData = [
       "Our customized platform with in-built analytics helps you manage your distributed teams.",
   },
 ];
-export default homeData;
+export default featuresData;
