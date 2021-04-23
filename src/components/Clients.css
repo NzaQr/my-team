@@ -1,0 +1,42 @@
+.client-logo {
+  width: 200px;
+  margin: 5rem;
+}
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #012f34;
+  background-image: url("/src/assets/bg-pattern-about-4.svg");
+  background-repeat: no-repeat;
+  background-position: top -100px left -50px;
+}
+
+.clients-title {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10rem 0rem 10rem;
+}
+
+.clients-component {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .clients-component {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients-title {
+    margin: 10rem 0rem 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .clients-component {
+    padding: 5rem;
+  }
+}
