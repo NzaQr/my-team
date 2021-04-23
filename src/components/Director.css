@@ -1,0 +1,136 @@
+.directors-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #004047;
+  background-image: url("/src/assets/bg-pattern-about-2-contact-1.svg"),
+    url("/src/assets/bg-pattern-home-4-about-3.svg");
+  background-repeat: no-repeat;
+  background-position: top -65px left -100px, bottom right;
+}
+
+.directors-title {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 15rem 0rem 10rem;
+}
+
+.directors-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.director {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 5rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.director:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #012f34;
+  color: black;
+  border-radius: 5px;
+}
+
+.flip-card-back {
+  background-color: #012f34;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+
+.director-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.director-name,
+.director-name-back {
+  color: #79c8c7;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.director-name-back {
+  margin-top: 4rem;
+}
+
+.director-description {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.director-position {
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 13px;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .directors-component {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .director {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .directors-section {
+    background-position: top left -100px, bottom right;
+  }
+
+  .directors-title {
+    font-size: 2vw;
+  }
+
+  .directors-component {
+    display: grid;
+    align-self: center;
+    height: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5rem 10rem;
+  }
+}
