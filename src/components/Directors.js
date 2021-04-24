@@ -9,15 +9,15 @@ export default function Directors({
   return (
     <div className="director">
       <div
-        className={`flip-card-inner ${flip ? "flip" : ""}`}
+        className={`card ${flip ? "flip" : ""}`}
         onClick={() => setFlip(!flip)}
       >
-        <div className="flip-card-front">
+        <div className="front">
           <img className="director-img" src={img} alt="director" />
           <h3 className="director-name">{name}</h3>
           <p className="director-position">{position}</p>
         </div>
-        <div className="flip-card-back">
+        <div className="back">
           <h3 className="director-name-back">{name}</h3>
           <p className="director-description">{description}</p>
           <a className="social-icon" href="https://twitter.com">
