@@ -11,7 +11,7 @@ export default function Header() {
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <div className="header-container">
-      <Link to="/myteam">
+      <Link to="/my-team">
         <img className="logo" src={Logo} alt="myteam logo" />
       </Link>
       <div className="nav">
@@ -26,7 +26,7 @@ export default function Header() {
               </Link>
             </li>
             <li className="item">
-              <Link to="/">Home</Link>
+              <Link to="/my-team">Home</Link>
             </li>
             <li className="item">
               <Link to="/about">About</Link>
