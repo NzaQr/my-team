@@ -10,11 +10,11 @@ export default function Footer() {
     <div className="footer-container">
       <div className="footer-links-container">
         <div>
-          <Link to="/my-team">
+          <Link to="/">
             <img className="footer-logo" src={Logo} alt="myteam logo" />
           </Link>
         </div>
-        <Link className="footer-link" to="/my-team">
+        <Link className="footer-link" to="/">
           home
         </Link>
         <Link className="footer-link" to="/about">
