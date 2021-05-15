@@ -4,15 +4,14 @@ import Features from "../components/Features";
 import Reviews from "../components/Reviews";
 import GetStarted from "../components/GetStarted";
 import Footer from "../components/Footer";
-import featuresData from "../components/featuresData";
-import reviewsData from "../components/reviewsData";
+import data from "../data";
 
 export default function Home() {
-  const features = featuresData.map((item) => (
+  const features = data[0].features.map((item) => (
     <Features key={item.name} feature={item} />
   ));
 
-  const reviews = reviewsData.map((item) => (
+  const reviews = data[1].reviews.map((item) => (
     <Reviews key={item.name} review={item} />
   ));
 

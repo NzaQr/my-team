@@ -4,15 +4,14 @@ import GetStarted from "../components/GetStarted";
 import Footer from "../components/Footer";
 import Directors from "../components/Directors";
 import Clients from "../components/Clients";
-import directorsData from "../components/directorsData";
-import clientsData from "../components/clientsData";
+import data from "../data";
 
 export default function About() {
-  const directors = directorsData.map((item) => (
+  const directors = data[2].directors.map((item) => (
     <Directors key={item.name} director={item} />
   ));
 
-  const clients = clientsData.map((item) => (
+  const clients = data[3].clients.map((item) => (
     <Clients key={item.name} client={item} />
   ));
 

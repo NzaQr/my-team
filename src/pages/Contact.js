@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import Map from "../components/Map";
 import "./Contact.css";
 import ContactAsk from "../components/ContactAsk";
-import contactAskData from "../components/contactAskData";
+import data from "../data";
 
-const contactAskAbout = contactAskData.map((item) => (
+const contactAskAbout = data[4].ask.map((item) => (
   <ContactAsk key={item.name} feature={item} />
 ));
 
